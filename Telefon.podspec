@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Telefon is a small library that gives info about an iPhone's current carrier, SIM info, Wifi Network Info and Reachability Status.
                        DESC
 
   s.homepage         = 'https://github.com/seyfeddin/Telefon'
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/seyfeddin/Telefon.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/seyfoyun'
 
-  s.ios.deployment_target = '8.3'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Telefon/Classes/**/*'
   
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'Telefon' => ['Telefon/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'CoreTelephony', 'SystemConfiguration'
   s.dependency 'ReachabilitySwift', '3'
 end
