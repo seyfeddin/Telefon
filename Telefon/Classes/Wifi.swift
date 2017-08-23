@@ -9,7 +9,7 @@
 import Foundation
 import SystemConfiguration.CaptiveNetwork
 
-final public class Wifi {
+public enum Wifi {
 
     public static func fetchSSIDInfo() -> CFDictionary? {
         if let supportedInterfacesArray = CNCopySupportedInterfaces() as? [CFString] {
@@ -45,21 +45,5 @@ final public class Wifi {
 
         return nil
     }
-
-//    public static func isWifiEnabled() -> Bool {
-//        // Got this from:
-//        var addresses = [String]()
-//
-//        var ifaddr : UnsafeMutablePointer<ifaddrs>?
-//        guard getifaddrs(&ifaddr) == 0 else { return false }
-//        guard let firstAddr = ifaddr else { return false }
-//
-//        for ptr in sequence(first: firstAddr, next: { $0.pointee.ifa_next }) {
-//            addresses.append(String(cString: ptr.pointee.ifa_name))
-//        }
-//
-//        freeifaddrs(ifaddr)
-//        return addresses.contains("awdl0")
-//    }
 
 }
