@@ -38,4 +38,13 @@ final public class SIM {
         return carrier?.allowsVOIP ?? false
     }
 
+    public var simInfo: [String : Any] {
+        return [
+            "carrierName" : carrierName,
+            "countryCode" : carrierCountry,
+            "mcc" : carrierCode,
+            "mnc" : carrierNetwork,
+            "allowsVOIP" : allowsVOIP
+        ]
+    }
 }
