@@ -1,6 +1,6 @@
 PODS:
   - ReachabilitySwift (3)
-  - Telefon (0.1.0):
+  - Telefon (0.1.2):
     - ReachabilitySwift (= 3)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
-  Telefon: d612ce2a997a39e5f2861d9825495a8c666d1b64
+  Telefon: 4a290fb6a810d807c32dfa6ab3ef1fc497b14294
 
 PODFILE CHECKSUM: 89bb87c243be9872da53da54fc520fabfa03513d
 
