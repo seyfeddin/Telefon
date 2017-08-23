@@ -1,0 +1,32 @@
+{
+  "name": "Telefon",
+  "version": "0.1.0",
+  "summary": "A small library to get SIM, Carrier, Phone Info",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/seyfoyun/Telefon",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "seyfoyun": "seyfeddin@wearethread.co"
+  },
+  "source": {
+    "git": "https://github.com/seyfoyun/Telefon.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.3"
+  },
+  "source_files": "Telefon/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "CoreTelephony",
+    "SystemConfiguration"
+  ],
+  "dependencies": {
+    "ReachabilitySwift": [
+      "3"
+    ]
+  }
+}

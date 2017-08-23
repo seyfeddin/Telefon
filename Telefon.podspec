@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Telefon'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Telefon.'
+  s.summary          = 'A small library to get SIM, Carrier, Phone Info'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/seyfoyun/Telefon'
+  s.homepage         = 'https://github.com/seyfeddin/Telefon'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'seyfoyun' => 'seyfeddin@wearethread.co' }
-  s.source           = { :git => 'https://github.com/seyfoyun/Telefon.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/seyfeddin/Telefon.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/seyfoyun'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.3'
 
   s.source_files = 'Telefon/Classes/**/*'
   
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'Telefon' => ['Telefon/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'CoreTelephony', 'SystemConfiguration'
+  s.dependency 'ReachabilitySwift', '3'
 end

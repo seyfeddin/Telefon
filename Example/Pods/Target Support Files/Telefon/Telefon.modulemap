@@ -1,0 +1,6 @@
+framework module Telefon {
+  umbrella header "Telefon-umbrella.h"
+
+  export *
+  module * { export * }
+}
