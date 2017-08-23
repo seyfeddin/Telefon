@@ -20,6 +20,22 @@ it, simply add the following line to your Podfile:
 pod "Telefon"
 ```
 
+## Usage
+To get SIM info:
+```swift
+let sim = SIM()
+```
+then you can get Carrier Name, Country, Code and Network information through computed properties
+
+To get Wifi info:
+```swift
+Wifi.connectedSSID // Gives SSID info
+Wifi.connectedBSSID // Gives BSSID Info
+```
+
+This pod also includes [SwiftReachability](https://github.com/ashleymills/Reachability.swift) library to determine the connection quality
+
+
 ## Author
 
 seyfoyun, seyfeddin@wearethread.co
