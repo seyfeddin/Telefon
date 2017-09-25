@@ -30,7 +30,6 @@ final class SIMViewController: UIViewController {
         carrierNetworkResultLabel.text = sim.carrierNetwork
 
 
-        
     }
 
     override func didReceiveMemoryWarning() {
